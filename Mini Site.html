@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Site</title>
+    <script src="minisite.js"></script>
+    <style>
+        body{
+            color:lightblue;
+            background-image: url(pexels-skitterphoto-688310.jpg);
+            align-items: center;
+            text-align: center;
+        }
+        #P1{
+            background-color: cadetblue; 
+            
+        }
+    </style>
+</head>
+
+<body onload="Atualizar()"> 
+    <h1>Pesquisa sobre Exercício Físico parte 1</h1>
+    <form name="pesquisa">
+        <label>Nome:</label><br/>
+        <input type="text" name="nome" id="nome" onchange="proximo('nome',event)" size="20"><br/><br/>
+        <label>Você gosta exercícios fisicos?</label><br/>
+        <textarea id="pergunta" name="pergunta" onchange="proximo('pergunta',event)" rows="5" cols="33"></textarea><br/>
+        
+       <a href="Mini Site 2.html"> <button type="button" value="proximo" id="P1" >Próximo</button></a>
+        
+       
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Site 3</title>
+    <script src="minisite.js"></script>
+    <style>
+        body{
+            color:lightblue;
+            background-image: url(pexels-skitterphoto-688310.jpg);
+            align-items: center;
+            text-align: center;
+        }
+        #P4{
+            background-color: cadetblue; 
+        }
+        #P5{
+            background-color: cadetblue; 
+        }
+    </style>
+</head>
+<body onload="Atualizar()">
+    <h1>Pesquisa sobre Exercício Físico parte 3</h1> 
+    <form >
+      <label>Qual exercício físico que você se identifica?</label><br/>
+      <input type="checkbox" id="Dança" onchange="proximo('tipo',event)" value="Dança">
+      <label>Dança</label><br/>
+      <input type="checkbox" id="Musculação" onchange="proximo('tipo',event)" value="Musculação">
+      <label>Musculação</label><br/>
+      <input type="checkbox" id="Aerobica" onchange="proximo('tipo',event)" value="Aerobica">
+      <label>Aerobica</label><br/><br/>
+     
+       <a href="Mini Site 2.html"> <button type="button" value="voltar" id="P4">Voltar</button></a>
+       <a href="Mini Site 4.html"> <button type="button" value="proximo" id="P5" >Próximo</button></a>
+
+      
+    </form> 
+</body>
+</html>

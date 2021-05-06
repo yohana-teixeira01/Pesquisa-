@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Site 2</title>
+    <script src="minisite.js"></script>
+    <style>
+        body{
+            color:lightblue;
+            background-image: url(pexels-skitterphoto-688310.jpg);
+            align-items: center;
+            text-align: center;
+        }
+        #P2{
+            background-color: cadetblue; 
+        }
+        #P3{
+            background-color: cadetblue; 
+        }
+    </style>
+</head>
+<body onload="Atualizar()">
+    <h1>Pesquisa sobre Exercício Físico parte 2</h1>
+    <form >
+        <label>Você costuma praticar exercícios fisicos?</label><br/>
+        <input type="radio" id="Sim" onclick="op(event)" onchange="proximo('pratica_exercicios',event)" name="sn" value="Sim">
+        <label>Sim</label><br/>
+        <input type="radio" id="Não" onclick="op(event)" onchange="proximo('pratica_exercicios',event)" name="sn" value="Não"> 
+        <label>Não</label>
+        <p id="opcao" style="display: none;">
+         <label >Quantas vezes na semana?</label>
+         <input type="text" id="Quantidade_semana" name="quantidade" onchange="proximo('Quantidade_semana',event)" size="50" >
+        </p><br/><br/>
+       <a href="Mini Site.html"> <button type="button" value="voltar"  id="P2" >Voltar</button></a>
+       <a href="Mini Site 3.html"> <button type="button" value="proximo" id="P3" >Próximo</button></a>
+
+      
+    </form>
+</body>
+</html>
